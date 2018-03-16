@@ -1,0 +1,18 @@
+<div>
+  <agm-map 
+    [latitude]="40.740573"
+    [longitude]="-73.981729"
+    [zoom]="17"
+  >
+
+  <agm-marker 
+      *ngFor="let m of wifiDataList; let i = index"
+      [latitude]="m.lat"
+      [longitude]="m.lon"
+      [label]="m.name"
+    >
+  </agm-marker>
+
+</agm-map>
+</div>
+
