@@ -7,11 +7,12 @@
     
     go run main.go
 
- API:
-| Api                | Method        |
-| ------------------ | :-----------: |
-| /get-all-wifi      | GET           |
-| /post-all-wifi     | POST          |
+    API:
+    
+    | Api                | Method        |
+    | ------------------ | :-----------: |
+    | /get-all-wifi      | GET           |
+    | /post-all-wifi     | POST          |
 
 
 - Start frontend: Angular 4
