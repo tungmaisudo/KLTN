@@ -7,6 +7,13 @@
     
     go run main.go
 
+ API:
+| Api                | Method        |
+| ------------------ | :-----------: |
+| /get-all-wifi      | GET           |
+| /post-all-wifi     | POST          |
+
+
 - Start frontend: Angular 4
     
     cd wifi-data-client
@@ -16,3 +23,5 @@
     ng s
 
 - http://localhost:4200
+
+![](image.png)
