@@ -1,0 +1,41 @@
+CREATE KEYSPACE kltn WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};
+
+USE kltn;
+
+CREATE TYPE kltn.the_geom (
+    type text,
+    coordinates frozen<list<float>>
+);
+
+CREATE TABLE kltn.wifi_data (
+    id uuid PRIMARY KEY,
+    activated timestamp,
+    bbl text,
+    bin text,
+    boro text,
+    borocd text,
+    borocode text,
+    boroct2010 text,
+    boroname text,
+    city text,
+    coundist text,
+    ct2010 text,
+    doitt_id text,
+    lat text,
+    location text,
+    location_t text,
+    lon text,
+    name text,
+    ntacode text,
+    ntaname text,
+    objectid text,
+    postcode text,
+    provider text,
+    remarks text,
+    sourceid text,
+    ssid text,
+    the_geom frozen<the_geom>,
+    type text,
+    x text,
+    y text
+);
